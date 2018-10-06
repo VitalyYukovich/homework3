@@ -1,0 +1,6 @@
+@import "./stylePhone.css" handheld;
+@import "./styleDesktop.css" screen;
+*{
+	padding: 0px;
+	margin: 0px;
+}

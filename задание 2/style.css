@@ -1,0 +1,120 @@
+*{
+		padding: 0px;
+		margin: 0px;
+}
+@media  screen
+and (min-device-width : 1025px) 
+{
+	.main{
+		display: flex;
+		text-align: justify;
+		flex-wrap: wrap;
+		align-items: stretch;
+		height: 100%;
+
+	}
+	.red{
+		background-color: red;
+		margin-right: 5px;
+		width: calc(30% - 5px);
+	}
+	.orange{
+		background-color: orange;
+		margin-left: 5px;
+		width: calc(70% - 5px);
+	}
+	.green{
+		background-color: green;
+		margin: 15px 0px 20px 0;
+	}
+	.maroon{
+		background-color: maroon;
+		margin-right: 5px;
+		width: calc((100% - 20px)/3);
+	}
+	.blue{
+		background-color: blue;
+		margin: 0px 5px;
+		width: calc((100% - 20px)/3);
+	}
+	.purple{
+		background-color: purple;
+		margin-left: 5px;
+		width: calc((100% - 20px)/3);
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+
+	.main{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		text-align: justify;
+		font-size: 30px;
+		height: 100%;
+	}
+	.blue, .maroon, .orange{
+		display: none;
+	}
+	.red{
+		background-color: red;
+		font-size: 70px;
+	}
+	.green{
+		order: -2;
+		background-color: green;
+		margin-bottom: 5px;
+	}
+	.purple{
+		order: -1;
+		background-color: purple;
+		margin-bottom: 5px;
+
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+{
+	.main{
+		display: flex;
+		text-align: justify;
+		flex-wrap: wrap;
+		font-size: 20px;
+		align-items: stretch;
+		height: 100%;
+	}
+	.maroon{
+		display: none;
+	}
+	.orange{
+		background-color: orange;
+		margin-right: 3px;
+		width: calc(35% - 3px);
+		order: -2;
+	}
+	.purple{
+		background-color: purple;
+		margin-left: 3px;
+		width: calc(65% - 3px);
+		order: -1;
+	}
+	.red{
+		background-color: red;
+		margin: 10px 0px 15px 0;
+	}
+	.green{
+		background-color: green;
+		margin-right: 3px;
+		width: calc(50% - 3px);
+	}
+	.blue{
+		background-color: blue;
+		margin-left: 3px;
+		width: calc(50% - 3px);
+	}
+}
