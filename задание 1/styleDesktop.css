@@ -10,7 +10,6 @@ body{
 .wrapper{
 	display: flex;
 	flex: 1 0 auto;
-	height: calc(100% - 20px);
 	flex-direction: column;
 }
 .header{
@@ -44,6 +43,53 @@ body{
 	border-bottom-right-radius: 15px 7px;
 	border-bottom-left-radius: 15px 7px;
 
+}
+.novigation{
+	display: flex;
+	justify-content: space-between;
+}
+.buttonNov{
+	display: flex;
+	width: 52px;
+	height: 52px;
+	border-radius: 26px;
+	background-color: grey;
+	margin: 10px;
+}
+
+.arrow{
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top-color: white;
+  margin: 6px 13px;
+  padding: 0;
+  float: left;
+}
+
+.arrow:before{
+  content:'';
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top-color: grey;
+  display: inline-block;
+  -webkit-transform: translate(-20px, -30px);
+}
+
+.arrow.left{
+  transform: rotate(90deg) translate(0px, 22px);
+  -webkit-transform: rotate(90deg) translate(0px, 22px);
+  -moz-transform: rotate(90deg) translate(0px, 22px);
+  -o-transform: rotate(90deg) translate(0px, 22px);
+  -ms-transform: rotate(90deg) translate(0px, 22px);
+}
+.arrow.right{
+  transform: rotate(270deg) translate(0px, 8px);
+  -webkit-transform: rotate(270deg) translate(0px, 8px);
+  -moz-transform: rotate(270deg) translate(0px, 8px);
+  -o-transform: rotate(270deg) translate(0px, 8px);
+  -ms-transform: rotate(270deg) translate(0px, 8px);
 }
 .footer{
 	flex: 0 0 auto;
