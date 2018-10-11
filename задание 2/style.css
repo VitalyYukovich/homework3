@@ -35,7 +35,7 @@ and (min-device-width : 1025px)
 	.blue{
 		background-color: blue;
 		margin: 0px 5px;
-		width: calc((100% - 20px)/3);
+		width: calc((100% - 21px)/3);
 	}
 	.purple{
 		background-color: purple;
